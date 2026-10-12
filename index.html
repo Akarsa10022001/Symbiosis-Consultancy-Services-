@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Symbiosis Education Consultancy — Admissions 2026–27</title>
+  <meta name="description" content="Strategic guidance for medical & professional degrees. Admissions in India and overseas — MBBS, AYUSH, Pharmacy, Nursing, Paramedical, Engineering, MBA and more. Book a 1:1 counselling session.">
+  <meta name="theme-color" content="#071a3d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <script type="importmap">
+    { "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+    } }
+  </script>
+</head>
+<body>
+  <!-- Brand mark, redrawn as vector from the Instagram logo: mortarboard + S ribbon + open book -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6d77c"/><stop offset=".55" stop-color="#d9a62e"/><stop offset="1" stop-color="#a87412"/></linearGradient>
+      <symbol id="mark" viewBox="0 0 64 64">
+        <path d="M32 4 58 14 32 24 6 14Z" fill="currentColor"/>
+        <path d="M17 18v7c0 3 7 6 15 6s15-3 15-6v-7l-15 6Z" fill="currentColor" opacity=".85"/>
+        <path d="M52 16v12" stroke="url(#gGold)" stroke-width="2"/><circle cx="52" cy="30" r="2.4" fill="url(#gGold)"/>
+        <path d="M41 28c-3-3-14-4-15 2-1 5 13 5 14 11 1 6-11 8-17 3" fill="none" stroke="url(#gGold)" stroke-width="5.5" stroke-linecap="round"/>
+        <path d="M4 44c9-3 19-2 28 6 9-8 19-9 28-6v6c-9-3-19-2-28 6-9-8-19-9-28-6Z" fill="currentColor"/>
+        <path d="M10 44c7-1 15 1 22 6 7-5 15-7 22-6" fill="none" stroke="url(#gGold)" stroke-width="1.6"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="loader" aria-hidden="true">
+    <svg class="loader-mark"><use href="#mark"/></svg>
+    <div class="loader-bar"><i></i></div>
+  </div>
+
+  <!-- NAV (floating pill, like the reference) -->
+  <header class="nav" id="nav">
+    <a class="brand" href="#home" aria-label="Symbiosis Education Consultancy, home">
+      <svg class="brand-mark"><use href="#mark"/></svg>
+      <span class="brand-word"><b>SYMBIOSIS</b><small>Education Consultancy</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#fields">Courses</a>
+      <a href="#approach">Approach</a>
+      <a href="#overseas">Overseas</a>
+      <a href="#process">Process</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-ghost nav-cta" href="#book">Book 1:1</a>
+    <button class="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+  </header>
+  <div class="drawer" id="drawer">
+    <a href="#fields">Courses</a><a href="#finder">Fee finder</a><a href="#approach">Approach</a><a href="#overseas">Overseas</a><a href="#process">Process</a><a href="#faq">FAQ</a><a href="#book" class="btn btn-gold">Book a 1:1 session</a>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-photo" aria-hidden="true"><img src="assets/photos/hero-classroom.jpg" alt="" fetchpriority="high"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <canvas id="hero3d" aria-hidden="true"></canvas>
+      <div class="hero-card" aria-hidden="true">
+        <div class="hc-row"><span class="hc-dot"></span><small>Lowest listed fee</small></div>
+        <b>₹20,000<span>/ year</span></b>
+        <small>Journalism &amp; Mass Comm · Balaghat</small>
+        <div class="hc-bars"><i style="--h:38%"></i><i style="--h:52%"></i><i style="--h:44%"></i><i style="--h:70%"></i><i style="--h:62%"></i><i style="--h:88%"></i></div>
+      </div>
+      <div class="wrap hero-inner">
+        <p class="pill-tag reveal"><span class="dot"></span>Admissions open · Session 2026–27</p>
+        <h1 class="hero-title split">Your future.<br><em>Our guidance.</em></h1>
+        <p class="hero-sub reveal">Strategic guidance for medical &amp; professional degrees — admissions in India and overseas, with fees paid directly to the institution.</p>
+        <div class="hero-ctas reveal">
+          <a class="btn btn-gold" href="#book">Book a 1:1 session <span class="arr">→</span></a>
+          <a class="btn btn-line" href="#finder">Explore courses &amp; fees</a>
+        </div>
+        <ul class="hero-facts reveal">
+          <li><b data-count="programmes">0</b><span>programmes listed</span></li>
+          <li><b>₹20k</b><span>/ year lowest fee</span></li>
+          <li><b data-count="4">0</b><span>countries</span></li>
+        </ul>
+      </div>
+      <div class="hero-marquee" aria-label="Universities and places we guide admissions for">
+        <div class="marquee-track">
+          <span>RGPV University</span><span>Sardar Patel University, Balaghat</span><span>VNSGU, Gujarat</span><span>Caucasus International University</span><span>PCI-approved colleges</span><span>UGC-recognised programmes</span><span>Gwalior</span><span>Bhopal</span><span>Roorkee</span><span>Navsari · Surat · Mumbai</span><span>Tbilisi</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIELDS / SERVICES -->
+    <section class="section" id="fields">
+      <div class="wrap">
+        <div class="head-row">
+          <div>
+            <p class="eyebrow reveal">Our courses</p>
+            <h2 class="split">Every professional degree, one honest guide</h2>
+          </div>
+          <p class="lede reveal">From a 1-year paramedical certificate after 10th to MBBS in Georgia — we help you choose the right course, in the right college, at a fee you can plan for.</p>
+        </div>
+        <div class="bento" id="bento"></div>
+        <div class="paths-head reveal"><h3>Popular career paths</h3><span>Tap one to see its fees</span></div>
+        <div class="paths" id="paths"></div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="band">
+      <div class="wrap band-inner">
+        <h2 class="split">Confused about college admissions?</h2>
+        <a class="btn btn-white" href="#book">Talk to a counsellor <span class="arr">→</span></a>
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section class="section" id="approach">
+      <div class="wrap approach">
+        <div class="receipt-stage">
+          <figure class="approach-photo"><img src="assets/photos/counselling.jpg" alt="A counsellor talking a student through her options" loading="lazy"></figure>
+          <div class="receipt" id="receipt" aria-hidden="true">
+            <div class="r-top"><svg><use href="#mark"/></svg><div><b>Fee receipt</b><small>Session 2026–27</small></div><span class="r-stamp">PAID TO<br>INSTITUTION</span></div>
+            <div class="r-row"><span>Course</span><b>B.Pharm · RGPV</b></div>
+            <div class="r-row"><span>Annual tuition</span><b>₹40,000</b></div>
+            <div class="r-row"><span>Donation</span><b class="zero">₹0</b></div>
+            <div class="r-row"><span>Middleman</span><b class="zero">—</b></div>
+            <div class="r-total"><span>Paid to</span><b>The college, directly</b></div>
+            <div class="r-barcode"></div>
+          </div>
+        </div>
+        <div>
+          <p class="eyebrow reveal">Our approach</p>
+          <h2 class="split">Your dream college. A transparent admission process.</h2>
+          <p class="lede reveal">We help students and parents decide with clarity and confidence. You pay fees directly to the institution, and every figure we quote comes from the college's own fee structure.</p>
+          <ul class="promises" id="promises"></ul>
+          <p class="fine reveal">*Admissions and fees are subject to the rules of the respective institution and university.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEE FINDER -->
+    <section class="section section-tint" id="finder">
+      <div class="wrap">
+        <div class="head-row">
+          <div>
+            <p class="eyebrow reveal">Fee finder</p>
+            <h2 class="split">Real courses. Real fees. No surprises.</h2>
+          </div>
+          <div class="finder-tools reveal">
+            <label class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="q" type="search" placeholder="Search B.Pharm, Bhopal, NEET…" autocomplete="off"></label>
+          </div>
+        </div>
+        <div class="chips reveal" id="chips" role="tablist" aria-label="Filter by field"></div>
+        <div class="courses" id="courses"></div>
+        <p class="empty" id="empty" hidden>No course matches that yet — <a href="#book">ask us directly</a>, we guide admissions beyond this list.</p>
+      </div>
+    </section>
+
+    <!-- PHOTO BAND (full-bleed parallax, like the reference) -->
+    <section class="photo-band">
+      <div class="pb-img"><img src="assets/photos/graduates-band.jpg" alt="Indian graduates in caps and gowns" loading="lazy"></div>
+      <div class="wrap pb-inner">
+        <p class="eyebrow eyebrow-light reveal">Why we do this</p>
+        <h2 class="split">From confusion to convocation.</h2>
+        <p class="reveal">Right guidance leads to the right future. We stay with you before, during and after admission.</p>
+      </div>
+    </section>
+
+    <!-- OVERSEAS -->
+    <section class="overseas" id="overseas">
+      <div class="wrap overseas-inner">
+        <div class="overseas-copy">
+          <p class="eyebrow eyebrow-light reveal">MBBS overseas</p>
+          <h2 class="split">Wear the white coat — in India or abroad.</h2>
+          <p class="lede reveal">Our MBBS experts guide admissions to verified medical colleges in Georgia, Russia and Ukraine, with complete documentation and visa support.</p>
+          <div class="ciu reveal">
+            <figure class="ciu-photo"><img src="assets/photos/tbilisi.jpg" alt="Tbilisi, Georgia at sunset" loading="lazy"><figcaption>Tbilisi, Georgia</figcaption></figure>
+            <div class="ciu-head"><span class="ciu-badge">CIU</span><div><b>Caucasus International University</b><small>Tbilisi, Georgia · NMC &amp; WHO approved</small></div></div>
+            <div class="ciu-total"><small>Total package (approx.)</small><b>₹42 Lacs</b></div>
+            <div class="ciu-split"><div><small>Tuition</small><b>₹30 Lacs</b></div><div><small>Hostel &amp; expenses</small><b>₹12 Lacs</b></div></div>
+            <ul class="ticks"><li>English-medium teaching</li><li>Indian food &amp; hostel</li><li>Admission &amp; visa process</li><li>FMGE / NEXT preparation</li></ul>
+          </div>
+        </div>
+        <div class="globe-stage">
+          <canvas id="globe" aria-label="Globe showing routes from India to Georgia, Russia and Ukraine"></canvas>
+          <div class="globe-labels" id="globeLabels"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section" id="process">
+      <div class="wrap">
+        <div class="head-row">
+          <div>
+            <p class="eyebrow reveal">Our process</p>
+            <h2 class="split">From first call to confirmed seat in four steps</h2>
+          </div>
+          <a class="btn btn-blue reveal" href="#book">Start with step 01 <span class="arr">→</span></a>
+        </div>
+        <div class="process" id="processGrid">
+          <div class="process-line" aria-hidden="true"><i></i></div>
+          <article class="step"><figure class="step-img"><img src="assets/photos/step-counsel.jpg" alt="A counsellor in a one-to-one session with a student" loading="lazy"></figure><span class="num">01.</span><h3>1:1 counselling</h3><p>A focused session on your marks, NEET score, budget and city. We tell you honestly what fits.</p></article>
+          <article class="step"><figure class="step-img"><img src="assets/photos/step-study.jpg" alt="Students comparing options together" loading="lazy"></figure><span class="num">02.</span><h3>Course &amp; college shortlist</h3><p>We compare recognised colleges, year-wise fees, hostel and mess costs, so you can decide with numbers in front of you.</p></article>
+          <article class="step"><figure class="step-img"><img src="assets/photos/step-docs.jpg" alt="Reviewing documents across a table" loading="lazy"></figure><span class="num">03.</span><h3>Documents &amp; registration</h3><p>Marksheets, ID and photos checked. A one-time registration (₹5,000 – ₹10,000, depending on the programme) holds your seat.</p></article>
+          <article class="step"><figure class="step-img"><img src="assets/photos/step-grad.jpg" alt="A graduate adjusting his cap" loading="lazy"></figure><span class="num">04.</span><h3>Admission confirmed</h3><p>Fees go directly to the institution. We stay with you before, during and after admission.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRAND (3D logo) + STATS -->
+    <section class="stats" id="brand">
+      <div class="wrap brand-grid">
+        <div class="brand-stage"><canvas id="brand3d" aria-label="The Symbiosis logo in 3D: a graduation cap, a gold S and an open book"></canvas></div>
+        <div>
+          <p class="eyebrow eyebrow-light reveal">Symbiosis Education Consultancy</p>
+          <h2 class="split">Your dreams. Our guidance. A better tomorrow.</h2>
+          <div class="stats-grid">
+        <div class="stat reveal"><b data-count="programmes">0</b><span>programmes with published fees and eligibility</span></div>
+        <div class="stat reveal"><b data-count="10">0</b><span>fields, from healthcare to law and design</span></div>
+        <div class="stat reveal"><b>₹<i data-count="20">0</i>k</b><span>a year — our lowest listed tuition (Journalism, Balaghat)</span></div>
+        <div class="stat reveal"><b data-count="0" data-final="₹0">₹0</b><span>donation or capitation fee</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="section" id="book">
+      <div class="wrap">
+        <div class="head-row head-row--stack">
+          <div>
+            <p class="eyebrow reveal">Book a 1:1 session</p>
+            <h2 class="split">Pick a day. Pick a time. We'll call you.</h2>
+          </div>
+          <p class="lede reveal">Sessions run Monday to Saturday. Your request goes straight to our WhatsApp, and we confirm the slot with you there.</p>
+        </div>
+
+        <div class="booking-wrap">
+        <img class="book-person" src="assets/cutouts/medico.webp" alt="" aria-hidden="true" loading="lazy">
+        <div class="booking reveal" id="booking">
+          <div class="bk-cal">
+            <div class="cal-head">
+              <button class="cal-nav" id="calPrev" aria-label="Previous month">‹</button>
+              <h3 id="calTitle">Month</h3>
+              <button class="cal-nav" id="calNext" aria-label="Next month">›</button>
+            </div>
+            <div class="cal-dow"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+            <div class="cal-grid" id="calGrid" role="grid"></div>
+            <div class="slots-wrap">
+              <p class="slots-title" id="slotsTitle">Choose a date to see times</p>
+              <div class="slots" id="slots"></div>
+            </div>
+          </div>
+
+          <form class="bk-form" id="bkForm" novalidate>
+            <div class="bk-summary" id="bkSummary"><span class="ico">🗓</span><div><small>Your session</small><b>No slot selected yet</b></div></div>
+            <div class="field2">
+              <label>Student's name<input name="name" required autocomplete="name" placeholder="Full name"></label>
+              <label>Phone / WhatsApp<input name="phone" required inputmode="tel" autocomplete="tel" placeholder="10-digit number" pattern="[0-9+ ]{10,14}"></label>
+            </div>
+            <div class="field2">
+              <label>Current qualification
+                <select name="qual" required>
+                  <option value="">Select</option><option>10th pass</option><option>12th — PCB</option><option>12th — PCM</option><option>12th — Commerce / Arts</option><option>Graduate</option><option>Postgraduate</option><option>Working professional</option>
+                </select>
+              </label>
+              <label>Course of interest<select name="course" id="courseSelect" required><option value="">Select</option></select></label>
+            </div>
+            <div class="field2">
+              <label>NEET score <span class="opt">(if any)</span><input name="neet" inputmode="numeric" placeholder="e.g. 410"></label>
+              <label>City<input name="city" autocomplete="address-level2" placeholder="Your city"></label>
+            </div>
+            <fieldset class="modes">
+              <legend>How should we meet?</legend>
+              <label><input type="radio" name="mode" value="Phone call" checked><span>📞 Phone call</span></label>
+              <label><input type="radio" name="mode" value="WhatsApp video"><span>🎥 WhatsApp video</span></label>
+              <label><input type="radio" name="mode" value="Google Meet"><span>💻 Google Meet</span></label>
+            </fieldset>
+            <label>Anything we should know? <span class="opt">(optional)</span><textarea name="note" rows="2" placeholder="Budget, preferred state, questions…"></textarea></label>
+            <p class="form-err" id="formErr" role="alert"></p>
+            <button class="btn btn-gold btn-block" type="submit">Request this slot on WhatsApp <span class="arr">→</span></button>
+            <p class="fine">Prefer calling? <a href="tel:+918200691036">+91 82006 91036</a></p>
+          </form>
+
+          <div class="bk-done" id="bkDone" hidden>
+            <div class="done-check"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="m15 27 7 7 15-16"/></svg></div>
+            <h3>Request ready, <span id="doneName">friend</span>!</h3>
+            <p id="doneText">Your WhatsApp opened with your booking details. Press send and we'll confirm your slot.</p>
+            <div class="done-ref">Booking ref <b id="doneRef">—</b></div>
+            <div class="done-actions">
+              <a class="btn btn-blue" id="doneWa" target="_blank" rel="noopener">Open WhatsApp again</a>
+              <a class="btn btn-line-dark" id="doneGcal" target="_blank" rel="noopener">Add to Google Calendar</a>
+              <button class="btn btn-line-dark" id="doneIcs" type="button">Download .ics</button>
+            </div>
+            <button class="link" id="doneReset" type="button">Book another session</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-tint" id="faq">
+      <div class="wrap faq">
+        <div>
+          <p class="eyebrow reveal">Students ask</p>
+          <h2 class="split">Straight answers before you pay anything</h2>
+          <p class="lede reveal">Still unsure? Message us on WhatsApp, or DM <a href="https://www.instagram.com/symbiosis.consultancy/" target="_blank" rel="noopener">@symbiosis.consultancy</a>.</p>
+          <div class="faq-figure reveal"><img src="assets/cutouts/med-students.webp" alt="Two medical students in white coats" loading="lazy"><span class="ff-badge"><b>NEET UG</b> required for MBBS, BDS &amp; AYUSH</span></div>
+        </div>
+        <div class="faq-list">
+          <details class="reveal"><summary>Do I have to pay a donation or capitation fee?</summary><p>No. We guide direct admissions with no donation and no middlemen. Fees follow the institution's regulated fee structure.*</p></details>
+          <details class="reveal"><summary>Who do I pay the course fees to?</summary><p>Directly to the college or university. You get the institution's receipt, not ours.</p></details>
+          <details class="reveal"><summary>What is the one-time payment (OTP)?</summary><p>A one-time admission registration, paid with your documents to confirm your seat. Depending on the programme it is ₹5,000 or ₹10,000. Each course card above shows the exact amount.</p></details>
+          <details class="reveal"><summary>Is NEET required?</summary><p>NEET UG is required for MBBS, BDS and AYUSH (BAMS, BHMS, BUMS). For other healthcare programmes, eligibility and NEET rules vary by university. We verify them for you before you pay anything.</p></details>
+          <details class="reveal"><summary>Which documents do I need?</summary><p>10th and 12th marksheets &amp; certificates, graduation marksheets (as per course), caste / category certificate if applicable, ID proof (Aadhaar / PAN / Voter ID) and 2–4 recent passport-size photographs.</p></details>
+          <details class="reveal"><summary>I'm working. Can I still get a degree?</summary><p>Yes. We guide you to UGC-recognised universities with flexible study options and valid degrees, plus an Executive MBA for professionals with 5+ years of experience. Distance options are available in some courses.</p></details>
+          <details class="reveal"><summary>Are there charges beyond tuition?</summary><p>Exam fees, certificates, hostel and mess are usually separate. Where a programme has a consultancy &amp; document-handling charge (for example ₹25,000 for BHMS Bhopal), we show it upfront on the course card.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- UPDATES (Instagram, as the reference's blog) -->
+    <section class="section" id="updates">
+      <div class="wrap">
+        <div class="head-row">
+          <div>
+            <p class="eyebrow reveal">Latest updates</p>
+            <h2 class="split">Fresh from our Instagram</h2>
+          </div>
+          <a class="btn btn-line-dark reveal" href="https://www.instagram.com/symbiosis.consultancy/" target="_blank" rel="noopener">Follow @symbiosis.consultancy</a>
+        </div>
+        <div class="updates" id="updatesGrid"></div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final">
+      <div class="final-photo" aria-hidden="true"><img src="assets/photos/final-grads.jpg" alt="" loading="lazy"></div>
+      <canvas id="finalCaps" aria-hidden="true"></canvas>
+      <div class="wrap final-inner">
+        <h2 class="split">Your dream course is just a call away.</h2>
+        <div class="hero-ctas reveal">
+          <a class="btn btn-gold" href="#book">Book a 1:1 session <span class="arr">→</span></a>
+          <a class="btn btn-line" href="tel:+918200691036">Call 82006 91036</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="brand brand-foot" href="#home"><svg class="brand-mark"><use href="#mark"/></svg><span class="brand-word"><b>SYMBIOSIS</b><small>Education Consultancy</small></span></a>
+        <p class="foot-tag">Your dreams · Our guidance · A better tomorrow</p>
+      </div>
+      <div><h4>Courses</h4><a href="#finder" data-field="medical">Medical &amp; AYUSH</a><a href="#finder" data-field="pharmacy">Pharmacy</a><a href="#finder" data-field="paramedical">Paramedical &amp; Nursing</a><a href="#finder" data-field="overseas">MBBS overseas</a></div>
+      <div><h4>Company</h4><a href="#approach">Approach</a><a href="#process">Process</a><a href="#faq">FAQ</a><a href="#book">Book a session</a></div>
+      <div><h4>Contact</h4><a href="tel:+918200691036">+91 82006 91036</a><a href="https://wa.me/917284913204" target="_blank" rel="noopener">WhatsApp</a><a href="https://www.instagram.com/symbiosis.consultancy/" target="_blank" rel="noopener">Instagram</a></div>
+    </div>
+    <div class="wrap foot-bottom"><span>© 2026 Symbiosis Education Consultancy</span><span>Admissions and fees are subject to the respective institution's rules.</span></div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/917284913204" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/hero3d.js"></script>
+  <script type="module" src="js/globe.js"></script>
+</body>
+</html>
