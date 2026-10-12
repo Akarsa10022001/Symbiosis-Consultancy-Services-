@@ -61,7 +61,7 @@ function renderBento() {
 /* ------------------------------------------------------------------ render: career paths */
 function renderPaths() {
   $('#paths').innerHTML = PATHS.map(p => `<button class="path" type="button" data-q="${p.q}">
-    <span class="path-disc"><img src="assets/cutouts/${p.img}.webp" alt="" loading="lazy"></span>
+    <span class="path-disc${p.inside ? ' in' : ''}"><img src="assets/cutouts/${p.img}.webp" alt="" loading="lazy"></span>
     <b>${p.label}</b><small>${p.from}</small></button>`).join('');
   $('#paths').addEventListener('click', e => {
     const b = e.target.closest('.path'); if (!b) return;

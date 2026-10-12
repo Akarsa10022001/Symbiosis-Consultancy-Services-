@@ -170,10 +170,10 @@ export const UPDATES = [
 
 // Popular career paths shown as cut-out portraits; `q` is typed into the fee finder search.
 export const PATHS = [
-  { img: 'nursing', label: 'Nursing', q: 'Nursing', from: '₹75,000 / yr' },
-  { img: 'physio', label: 'Physiotherapy', q: 'BPT', from: '₹4.05 L total' },
-  { img: 'ot-tech', label: 'OT Technology', q: 'O.T', from: '₹40,000 / yr' },
-  { img: 'paramedic', label: 'Paramedical after 10th', q: 'certificate', from: '₹30,000' },
+  { img: 'nursing', label: 'Nursing', q: 'B.Sc Nursing', from: '₹75,000 / yr' },
+  { img: 'physio', inside: true, label: 'Physiotherapy', q: 'BPT', from: '₹4.05 L total' },
+  { img: 'ot-tech', inside: true, label: 'OT Technology', q: 'O.T', from: '₹40,000 / yr' },
+  { img: 'paramedic', label: 'Paramedical after 10th', q: '1-year certificate', from: '₹30,000' },
   { img: 'yoga', label: 'Yoga & Naturopathy', q: 'Yoga', from: 'MD ₹3.9 L' },
   { img: 'agriculture', label: 'Agriculture', q: 'Agriculture', from: 'On counselling' },
 ];
